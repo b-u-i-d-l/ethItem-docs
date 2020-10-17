@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>IEthItemFactory - arte-1155</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "IEthItemFactory";
+    var mkdocs_page_input_path = "factory/IEthItemFactory.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> arte-1155</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">API</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Factory</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">IEthItemFactory</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#methods">Methods</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#doubleproxy">doubleProxy()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setdoubleproxyaddress">setDoubleProxy(address)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ethitemerc20wrappermodel">ethItemERC20WrapperModel()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setethitemerc20wrappermodeladdress">setEthItemERC20WrapperModel(address)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#erc1155model">erc1155Model()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#seterc1155modeladdress">setERC1155Model(address)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#erc1155wrappermodel">erc1155WrapperModel()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#seterc1155wrappermodeladdress">setERC1155WrapperModel(address)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#erc20wrappermodel">erc20WrapperModel()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#seterc20wrappermodeladdress">setERC20WrapperModel(address)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#erc721wrappermodel">erc721WrapperModel()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#seterc721wrappermodeladdress">setERC721WrapperModel(address)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mintfeepercentage">mintFeePercentage()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setmintfeepercentageuint256-uint256">setMintFeePercentage(uint256, uint256)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#calculatemintfeeuint256">calculateMintFee(uint256)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#burnfeepercentage">burnFeePercentage()</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setburnfeepercentageuint256-uint256">setBurnFeePercentage(uint256, uint256)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#calculateburnfeeuint256">calculateBurnFee(uint256)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#createerc1155bytes-calldata">createERC1155(bytes calldata)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#createwrappederc1155bytes-calldata">createWrappedERC1155(bytes calldata)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#createwrappederc20bytes-calldata">createWrappedERC20(bytes calldata)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#createwrappederc721bytes-calldata">createWrappedERC721(bytes calldata)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Models</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">1</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../models/1/IERC1155V1/">IERC1155V1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../models/1/IERC1155WrapperV1/">IERC1155WrapperV1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../models/1/IERC20WrapperV1/">IERC20WrapperV1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../models/1/IERC721WrapperV1/">IERC721WrapperV1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../models/1/IEthItemModelBased/">IEthItemModelBased</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">arte-1155</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Factory &raquo;</li>
+        
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>IEthItemFactory</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="contract-iethitemfactory">Contract IEthItemFactory</h1>
+<ul>
+<li><strong>Path:</strong> IEthItemFactory.sol</li>
+<li><strong>Version:</strong> 1</li>
+<li><strong>Title:</strong> EthItemFactory Interface</li>
+</ul>
+<hr />
+<ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#doubleproxy">doubleProxy()</a></li>
+<li><a href="#setdoubleproxyaddress">setDoubleProxy(address)</a><ul>
+<li><a href="#params">Params</a></li>
+</ul>
+</li>
+<li><a href="#ethitemerc20wrappermodel">ethItemERC20WrapperModel()</a></li>
+<li><a href="#setethitemerc20wrappermodeladdress">setEthItemERC20WrapperModel(address)</a><ul>
+<li><a href="#params-1">Params</a></li>
+</ul>
+</li>
+<li><a href="#erc1155model">erc1155Model()</a></li>
+<li><a href="#seterc1155modeladdress">setERC1155Model(address)</a><ul>
+<li><a href="#params-2">Params</a></li>
+</ul>
+</li>
+<li><a href="#erc1155wrappermodel">erc1155WrapperModel()</a></li>
+<li><a href="#seterc1155wrappermodeladdress">setERC1155WrapperModel(address)</a><ul>
+<li><a href="#params-3">Params</a></li>
+</ul>
+</li>
+<li><a href="#erc20wrappermodel">erc20WrapperModel()</a></li>
+<li><a href="#seterc20wrappermodeladdress">setERC20WrapperModel(address)</a><ul>
+<li><a href="#params-4">Params</a></li>
+</ul>
+</li>
+<li><a href="#erc721wrappermodel">erc721WrapperModel()</a></li>
+<li><a href="#seterc721wrappermodeladdress">setERC721WrapperModel(address)</a></li>
+<li><a href="#mintfeepercentage">mintFeePercentage()</a></li>
+<li><a href="#setmintfeepercentageuint256-uint256">setMintFeePercentage(uint256, uint256)</a><ul>
+<li><a href="#params-5">Params</a></li>
+</ul>
+</li>
+<li><a href="#calculatemintfeeuint256">calculateMintFee(uint256)</a><ul>
+<li><a href="#params-6">Params</a></li>
+</ul>
+</li>
+<li><a href="#burnfeepercentage">burnFeePercentage()</a></li>
+<li><a href="#setburnfeepercentageuint256-uint256">setBurnFeePercentage(uint256, uint256)</a><ul>
+<li><a href="#params-7">Params</a></li>
+</ul>
+</li>
+<li><a href="#calculateburnfeeuint256">calculateBurnFee(uint256)</a><ul>
+<li><a href="#params-8">Params</a></li>
+</ul>
+</li>
+<li><a href="#createerc1155bytes-calldata">createERC1155(bytes calldata)</a><ul>
+<li><a href="#params-9">Params</a></li>
+</ul>
+</li>
+<li><a href="#createwrappederc1155bytes-calldata">createWrappedERC1155(bytes calldata)</a><ul>
+<li><a href="#params-10">Params</a></li>
+</ul>
+</li>
+<li><a href="#createwrappederc20bytes-calldata">createWrappedERC20(bytes calldata)</a><ul>
+<li><a href="#params-11">Params</a></li>
+</ul>
+</li>
+<li><a href="#createwrappederc721bytes-calldata">createWrappedERC721(bytes calldata)</a><ul>
+<li><a href="#params-12">Params</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>This contract represents the Factory Used to deploy all the EthItems, keeping track of them.</p>
+<h2 id="methods">Methods</h2>
+<h3 id="doubleproxy">doubleProxy()</h3>
+<p>GET - The DoubleProxy of the DFO linked to this Contract.</p>
+<h3 id="setdoubleproxyaddress">setDoubleProxy(address)</h3>
+<p>SET - The DoubleProxy of the DFO linked to this Contract. It can be done only by the Factory controller</p>
+<h4 id="params">Params</h4>
+<ul>
+<li><code>newDoubleProxy</code>: the new DoubleProxy address</li>
+</ul>
+<h3 id="ethitemerc20wrappermodel">ethItemERC20WrapperModel()</h3>
+<p>GET - The address of the Smart Contract whose code will serve as a model for all the EthItemERC20Wrappers (please see the eth-item-token-standard for further information).</p>
+<h3 id="setethitemerc20wrappermodeladdress">setEthItemERC20WrapperModel(address)</h3>
+<p>SET - The address of the Smart Contract whose code will serve as a model for all the EthItemERC20Wrappers (please see the eth-item-token-standard for further information).
+It can be done only by the Factory controller</p>
+<h4 id="params_1">Params</h4>
+<ul>
+<li><code>ethItemERC20WrapperModelAddress</code>: the ethItemERC20WrapperModelAddress to set</li>
+</ul>
+<h3 id="erc1155model">erc1155Model()</h3>
+<p>GET - The address of the Smart Contract whose code will serve as a model for all the ERC1155 NFT-Based EthItems.
+Every EthItem will have its own address, but the code will be cloned from this one.</p>
+<h3 id="seterc1155modeladdress">setERC1155Model(address)</h3>
+<p>SET - The address of the ERC1155 NFT-Based EthItem model. It can be done only by the Factory controller.</p>
+<h4 id="params_2">Params</h4>
+<ul>
+<li><code>erc1155ModelAddress</code>: Address of the ERC1155 NFT-Based EthItem model to set</li>
+</ul>
+<h3 id="erc1155wrappermodel">erc1155WrapperModel()</h3>
+<p>GET - The address of the Smart Contract whose code will serve as a model for all the Wrapped ERC1155 EthItems.
+Every EthItem will have its own address, but the code will be cloned from this one.</p>
+<h3 id="seterc1155wrappermodeladdress">setERC1155WrapperModel(address)</h3>
+<p>SET - The address of the ERC1155 NFT-Based EthItem model. It can be done only by the Factory controller.</p>
+<h4 id="params_3">Params</h4>
+<ul>
+<li><code>erc1155WrapperModelAddress</code>: Address of the ERC1155 NFT-Based EthItem model to set</li>
+</ul>
+<h3 id="erc20wrappermodel">erc20WrapperModel()</h3>
+<p>GET - The address of the Smart Contract whose code will serve as a model for all the Wrapped ERC20 EthItems.</p>
+<h3 id="seterc20wrappermodeladdress">setERC20WrapperModel(address)</h3>
+<p>SET - The address of the Smart Contract whose code will serve as a model for all the Wrapped ERC20 EthItems.</p>
+<p><strong>Note:</strong> It can be done only by the Factory controller.</p>
+<h4 id="params_4">Params</h4>
+<ul>
+<li><code>erc20WrapperModelAddress</code>: Address of the Contract whose code will serve as a model for all the Wrapped ERC20 EthItem</li>
+</ul>
+<h3 id="erc721wrappermodel">erc721WrapperModel()</h3>
+<p>GET - The address of the Smart Contract whose code will serve as a model for all the Wrapped ERC721 EthItems.</p>
+<h3 id="seterc721wrappermodeladdress">setERC721WrapperModel(address)</h3>
+<p>SET - The address of the Smart Contract whose code will serve as a model for all the Wrapped ERC721 EthItems.</p>
+<p>It can be done only by the Factory controller.</p>
+<h3 id="mintfeepercentage">mintFeePercentage()</h3>
+<p>GET - The elements (numerator and denominator) useful to calculate the percentage fee to be transferred to the DFO for every new Minted EthItem.</p>
+<h3 id="setmintfeepercentageuint256-uint256">setMintFeePercentage(uint256, uint256)</h3>
+<p>SET - The element useful to calculate the Percentage fee.
+It can be done only by the Factory controller.</p>
+<h4 id="params_5">Params</h4>
+<ul>
+<li><code>mintFeePercentageNumerator</code>: Numerator used to compute the Percentage fee.</li>
+<li><code>mintFeePercentageDenominator</code>: Denominator used to compute the Percentage fee.</li>
+</ul>
+<h3 id="calculatemintfeeuint256">calculateMintFee(uint256)</h3>
+<p>Useful utility method to calculate the percentage fee to transfer to the DFO for the minted EthItem amount.</p>
+<h4 id="params_6">Params</h4>
+<ul>
+<li><code>erc20WrapperAmount</code>: The amount of minted EthItem</li>
+</ul>
+<h3 id="burnfeepercentage">burnFeePercentage()</h3>
+<p>GET - The elements (numerator and denominator) useful to calculate the percentage fee to be transferred to the DFO for every Burned EthItem</p>
+<h3 id="setburnfeepercentageuint256-uint256">setBurnFeePercentage(uint256, uint256)</h3>
+<p>SET - The element useful to calculate the Percentage fee.
+It can be done only by the Factory controller.</p>
+<h4 id="params_7">Params</h4>
+<ul>
+<li><code>burnFeePercentageNumerator</code>: Numerator used to compute the Percentage fee.</li>
+<li><code>burnFeePercentageDenominator</code>: Denominator used to compute the Percentage fee.</li>
+</ul>
+<h3 id="calculateburnfeeuint256">calculateBurnFee(uint256)</h3>
+<p>Useful utility method to calculate the percentage fee to transfer to the DFO for the minted EthItem amount.</p>
+<h4 id="params_8">Params</h4>
+<ul>
+<li><code>erc20WrapperAmount</code>: The amount of minted EthItem</li>
+</ul>
+<h3 id="createerc1155bytes-calldata">createERC1155(bytes calldata)</h3>
+<p>Business Logic to create a brand-new EthItem. It raises the <code>NewERC1155Created</code> event.</p>
+<h4 id="params_9">Params</h4>
+<ul>
+<li><code>modelInitCallPayload</code>: The ABI-encoded input parameters to be passed to the model to physically create the NFT. It changes according to the Model Version.</li>
+<li><code>ethItemAddress</code>: The address of the new EthItem</li>
+<li><code>ethItemInitResponse</code> The ABI-encoded output response eventually received by the Model initialization procedure.</li>
+</ul>
+<h3 id="createwrappederc1155bytes-calldata">createWrappedERC1155(bytes calldata)</h3>
+<p>Business Logic to wrap already existing ERC1155 Tokens to obtain a new NFT-Based EthItem. It raises the <code>NewWrappedERC1155Created</code> event.</p>
+<h4 id="params_10">Params</h4>
+<ul>
+<li><code>modelInitCallPayload</code>: The ABI-encoded input parameters to be passed to the model to phisically create the NFT. It changes according to the Model Version.</li>
+<li><code>ethItemAddress</code>: The address of the new EthItem</li>
+<li><code>ethItemInitResponse</code>: The ABI-encoded output response eventually received by the Model initialization procedure.</li>
+</ul>
+<h3 id="createwrappederc20bytes-calldata">createWrappedERC20(bytes calldata)</h3>
+<p>Business Logic to wrap already existing ERC20 Tokens to obtain a new NFT-Based EthItem. It raises the <code>NewWrappedERC20Created</code> event.</p>
+<h4 id="params_11">Params</h4>
+<ul>
+<li><code>modelInitCallPayload</code>: The ABI-encoded input parameters to be passed to the model to physically create the NFT. It changes according to the Model Version.</li>
+<li><code>ethItemAddress</code>: The address of the new EthItem</li>
+<li><code>ethItemInitResponse</code>: The ABI-encoded output response eventually received by the Model initialization procedure.</li>
+</ul>
+<h3 id="createwrappederc721bytes-calldata">createWrappedERC721(bytes calldata)</h3>
+<p>Business Logic to wrap already existing ERC721 Tokens to obtain a new NFT-Based EthItem. It raises the 'NewWrappedERC721Created' event.</p>
+<h4 id="params_12">Params</h4>
+<ul>
+<li><code>modelInitCallPayload</code> The ABI-encoded input parameters to be passed to the model to phisically create the NFT. It changes according to the Model Version.</li>
+<li><code>ethItemAddress</code>: The address of the new EthItem</li>
+<li><code>ethItemInitResponse</code>: The ABI-encoded output response eventually received by the Model initialization procedure.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../models/1/IERC1155V1/" class="btn btn-neutral float-right" title="IERC1155V1">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../models/1/IERC1155V1/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

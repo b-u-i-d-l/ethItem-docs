@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>IERC1155WrapperV1 - arte-1155</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "IERC1155WrapperV1";
+    var mkdocs_page_input_path = "models/1/IERC1155WrapperV1.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> arte-1155</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">API</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="#">Factory</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../factory/IEthItemFactory/">IEthItemFactory</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Models</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">1</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../IERC1155V1/">IERC1155V1</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">IERC1155WrapperV1</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#methods">Methods</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../IERC20WrapperV1/">IERC20WrapperV1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../IERC721WrapperV1/">IERC721WrapperV1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../IEthItemModelBased/">IEthItemModelBased</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">arte-1155</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>1 &raquo;</li>
+        
+      
+        
+          <li>Models &raquo;</li>
+        
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>IERC1155WrapperV1</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="contract-ierc1155wrapperv1">Contract IERC1155WrapperV1</h1>
+<ul>
+<li><strong>Path:</strong> IERC1155WrapperV1.sol</li>
+<li><strong>Version:</strong> 1</li>
+<li><strong>Title:</strong> ERC1155 NFT-Based EthItem, version 1</li>
+</ul>
+<hr />
+<ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#initaddress-string-calldata-string-calldata-bool-bool-bool">init(address, string calldata, string calldata, bool, bool, bool)</a><ul>
+<li><a href="#params">Params</a></li>
+</ul>
+</li>
+<li><a href="#source">source()</a></li>
+</ul>
+<h2 id="description">Description</h2>
+<p>ERC1155 NFT-Based EthItem, version 1.</p>
+<h2 id="methods">Methods</h2>
+<h3 id="initaddress-string-calldata-string-calldata-bool-bool-bool">init(address, string calldata, string calldata, bool, bool, bool)</h3>
+<p>Contract Initialization.</p>
+<h4 id="params">Params</h4>
+<ul>
+<li><code>name</code>: The chosen name for this NFT</li>
+<li><code>symbol</code>: The chosen symbol (Ticker) for this NFT</li>
+<li><code>source</code>: The address of the Original ERC1155 NFT Wrapped in this collection</li>
+<li><code>supportsSpecificName</code>: Set to true if the given source NFT supports the <code>name(uint256)</code> function.</li>
+<li><code>supportsSpecificSymbol</code>: Set to true if the given source NFT supports the <code>symbol(uint256)</code> function.</li>
+<li><code>supportsSpecificDecimals</code>: Set to true if the given source NFT supports the <code>decimals(uint256)</code> function.</li>
+</ul>
+<h3 id="source">source()</h3>
+<p>GET The address of the original wrapped ERC1155 NFT.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../IERC20WrapperV1/" class="btn btn-neutral float-right" title="IERC20WrapperV1">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../IERC1155V1/" class="btn btn-neutral" title="IERC1155V1"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../IERC1155V1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../IERC20WrapperV1/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
